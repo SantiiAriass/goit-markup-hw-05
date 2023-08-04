@@ -4,57 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="#main__hero">Icono(WebStudio)</a>
-        <ul class="list">
-          <!-- no hhay una seccion en la página para navegar el listado de (estudio-portafolio) asi que solo agregue para navegar por contactos -->
-          <li><a href="#">Estudio</a></li>
-          <li><a href="#">Portafolio</a></li>
-          <li><a href="#main__contactos">Contactos</a></li>
+        <a class="icono" href="#main__hero">WebStudio</a>
+        <ul class="header__navegation list">
+          <li class="header__item">
+            <a class="header__link current" href="#">Estudio</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="./portafolio.html">Portafolio</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#main__contactos">Contactos</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+525555296000 ">+52 55 5529 6000</a></li>
+      <ul class="contac list">
+        <li class="contac__item">
+          <a class="contac__link" href="mailto:info@devstudio.com"
+            >✉ info@devstudio.com</a
+          >
+        </li>
+        <li class="contac__item">
+          <a class="contac__link" href="tel:+525555296000 ">+52 55 5529 6000</a>
+        </li>
       </ul>
     </header>
     <main id="main__hero">
       <section>
-        <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button type="button">Solicite nuestro servicio</button>
+        <h1 class="main__apertura">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="button__solicite" type="button">
+          Solicite nuestro servicio
+        </button>
       </section>
       <section id="main__metodología">
         <h2 style="display: none">metodología</h2>
-        <ul>
+        <ul class="main__metodología list">
           <li>
-            <h3>Atención a los detalles</h3>
-            <p>
+            <h3 class="metodología__item list">Atención a los detalles</h3>
+            <p class="metodología__text">
               Nos adentramos en todos los detalles y procesos de su negocio,
               para así desarrollar una solución a su medida.
             </p>
           </li>
           <li>
-            <h3>Puntualidad</h3>
-            <p>
+            <h3 class="metodología__item">Puntualidad</h3>
+            <p class="metodología__text">
               Con nosotros, usted puede sentirse seguro y protegido. Un
               principio importante de la empresa: respetar su tiempo y respetar
               los plazos acordados.
             </p>
           </li>
           <li>
-            <h3>Planificación</h3>
-            <p>
+            <h3 class="metodología__item">Planificación</h3>
+            <p class="metodología__text">
               Usted podrá observar y participar en cada fase del desarrollo y
               aplicación de soluciones.
             </p>
           </li>
           <li>
-            <h3>Tecnología moderna</h3>
-            <p>
+            <h3 class="metodología__item">Tecnología moderna</h3>
+            <p class="metodología__text">
               Usamos herramientas innovadoras para resolver las tareas
               asignadas. Es hora de simplificar los procesos laborales.
             </p>
@@ -62,8 +76,8 @@
         </ul>
       </section>
       <section id="main__dedicación">
-        <h2>A qué nos dedicamos</h2>
-        <ul>
+        <h2 class="dedicación">A qué nos dedicamos</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/caja_1.jpg"
@@ -91,8 +105,8 @@
         </ul>
       </section>
       <section id="main__equipo">
-        <h2>Nuestro equipo</h2>
-        <ul>
+        <h2 class="nuestro__equipo">Nuestro equipo</h2>
+        <ul class="equipo list">
           <li>
             <img
               src="./images/diseñador_de_productos.jpg"
@@ -101,8 +115,8 @@
               alt="imagen de Andres Cubo (diseñador de productos)"
             />
           </li>
-          <li><h3>Andres Cubo</h3></li>
-          <li><p>Diseñador de productos</p></li>
+          <li><h3 class="integrantes">Andres Cubo</h3></li>
+          <li><p class="cargo">Diseñador de productos</p></li>
           <li>
             <img
               src="./images/desarrolladora_froted.jpg"
@@ -111,8 +125,8 @@
               alt="Carla Palacios (desarrolladora fronted)"
             />
           </li>
-          <li><h3>Carla Palacios</h3></li>
-          <li><p>desarrolladora fronted</p></li>
+          <li><h3 class="integrantes">Carla Palacios</h3></li>
+          <li><p class="cargo">desarrolladora fronted</p></li>
           <li>
             <img
               src="./images/marketing.jpg"
@@ -121,8 +135,8 @@
               alt=" imagen de Mario Dorado (marketing)"
             />
           </li>
-          <li><h3>Mario Dorado</h3></li>
-          <li><p>marketing</p></li>
+          <li><h3 class="integrantes">Mario Dorado</h3></li>
+          <li><p class="cargo">marketing</p></li>
           <li>
             <img
               src="./images/diseñador_IU.jpg"
@@ -131,16 +145,17 @@
               alt="imagen de Pablo Mijangos (diseñador IU)"
             />
           </li>
-          <li><h3>Pablo Mijangos</h3></li>
-          <li><p>Diseñador IU</p></li>
+          <li><h3 class="integrantes">Pablo Mijangos</h3></li>
+          <li><p class="cargo">Diseñador IU</p></li>
         </ul>
       </section>
     </main>
-    <footer id="main__contactos">
-      <a href="#">icono(WebStudio)</a>
-      <ul>
+    <footer id="main__contactos" class="footer">
+      <a class="icono" href="#">WebStudio</a>
+      <ul class="list">
         <li>
           <a
+            class="location"
             href="https://goo.gl/maps/owrN3TMuwijHi6xc7"
             rel="noopener noreferrer"
             target="_blank"
@@ -148,8 +163,16 @@
             Calz. Ticomán 500, Ciudad de México, CDMX, México</a
           >
         </li>
-        <li><a href="mailto:info@example.com"></a>info@example.com</li>
-        <li><a href="tel:+525555296000 "></a>+52 55 5529 6000</li>
+        <li>
+          <a class="footer__contac" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+        </li>
+        <li>
+          <a class="footer__contac" href="tel:+525555296000 "
+            >+52 55 5529 6000</a
+          >
+        </li>
       </ul>
     </footer>
   </body>
