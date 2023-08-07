@@ -37,6 +37,9 @@ body {
 .header__navegation .header__link:hover {
   color: var(--primary-color);
 }
+.header__navegation .header__link:focus {
+  color: var(--primary-color);
+}
 .header__link.current {
   color: var(--primary-color);
 }
@@ -49,6 +52,9 @@ body {
   letter-spacing: 0.28px;
 }
 .contac .contac__link:hover {
+  color: var(--primary-color);
+}
+.contac .contac__link:focus {
   color: var(--primary-color);
 }
 
@@ -180,6 +186,10 @@ body {
 .location:hover {
   color: var(--primary-color);
 }
+.location:focus {
+  color: var(--primary-color);
+}
+
 .footer {
   color: var(--detail2-color);
   background-color: var(--background-color);
@@ -197,5 +207,8 @@ body {
   text-decoration: none;
 }
 .footer__contac:hover {
+  color: var(--primary-color);
+}
+.footer__contac:focus {
   color: var(--primary-color);
 }
