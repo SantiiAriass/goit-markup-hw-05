@@ -13,9 +13,20 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--font-color);
 }
+.container {
+  width: 1600px;
+  margin: auto;
+}
+.container__portafolio {
+  width: 1600px;
+  height: 1880px;
+  margin: auto;
+}
+
 .list {
   list-style-type: none;
 }
+
 .icono {
   color: var(--primary-color);
   text-align: right;
@@ -25,6 +36,8 @@ body {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-decoration: none;
+  width: 145px;
+  height: 31px;
 }
 .header__navegation .header__link {
   color: var(--font-color);
@@ -43,7 +56,7 @@ body {
 .header__link.current {
   color: var(--primary-color);
 }
-.contac .contac__link {
+.contac__list .contac__link {
   color: var(--detail-color);
   text-decoration: none;
   font-size: 14px;
@@ -51,34 +64,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contac .contac__link:hover {
+.contac__list .contac__link:hover {
   color: var(--primary-color);
 }
-.contac .contac__link:focus {
+.contac__list .contac__link:focus {
   color: var(--primary-color);
-}
-
-.button .button__category {
-  color: var(--font-color);
-  text-align: center;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  background-color: var(--button-color);
-  border-radius: 4px;
-  border-color: var(--detail2-color);
-}
-.button .button__category:hover {
-  color: var(--detail2-color);
-  background-color: var(--primary-color);
-  cursor: pointer;
-}
-.button .button__category:focus {
-  color: var(--detail2-color);
-  background-color: var(--primary-color);
-  cursor: pointer;
 }
 
 .main__apertura {
@@ -88,20 +78,25 @@ body {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  background-color: var(--background-color);
+  margin: 0;
 }
 
 .button__solicite {
   color: var(--detail2-color);
   background-color: var(--primary-color);
-  text-align: center;
+  width: 197px;
+  height: 30px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  border-color: var(--detail2-color);
   padding: 10px 32px;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-decoration: none;
 }
 .button__solicite:hover {
   color: var(--detail-color);
@@ -136,6 +131,9 @@ body {
   letter-spacing: 0.03em;
 }
 .nuestro__equipo {
+  width: 263px;
+  height: 42px;
+  margin: auto 0;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -144,7 +142,7 @@ body {
 }
 .integrantes {
   color: var(--font-color);
-  text-align: left;
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.12;
@@ -152,7 +150,7 @@ body {
 }
 .cargo {
   color: var(--detail-color);
-  text-align: left;
+  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.12;
@@ -161,18 +159,26 @@ body {
 }
 
 .filtro__item {
+  width: 322px;
+  height: 36px;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   text-transform: capitalize;
+  margin: 0;
+  padding: 20px 24px 0 24px;
 }
 .info__category {
   color: var(--detail-color);
+  width: 322px;
+  height: 36px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0 24px 20px 24px;
 }
 
 .location {
@@ -197,6 +203,8 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 1600px;
+  height: 252px;
 }
 .footer__contac {
   color: var(--detail-color);
@@ -211,4 +219,427 @@ body {
 }
 .footer__contac:focus {
   color: var(--primary-color);
+}
+
+/* sección de cajas header */
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  width: 1600px;
+  margin: 0;
+}
+.box__icono {
+  margin-right: 93px;
+  padding-left: 215px;
+}
+.header__navegation {
+  display: flex;
+  margin-right: 344px;
+  column-gap: 50px;
+  align-items: center;
+}
+.contac__list {
+  display: flex;
+  column-gap: 50px;
+  padding: 0;
+  align-items: center;
+}
+
+/* sección de cajas apertura */
+
+.container__apertura {
+  background-color: var(--background-color);
+  width: 1600px;
+  height: 600px;
+}
+
+.box__apertura {
+  width: 696px;
+  height: 120px;
+  padding: 200px 452px 30px 452px;
+}
+.buttombox__apertura {
+  width: 261px;
+  height: 50px;
+  padding: 0 669px 200px 670px;
+}
+
+/* sección para cajas metodología */
+
+.container__metodología {
+  display: flex;
+  column-gap: 30px;
+  width: 1170px;
+  height: 122px;
+  margin: auto;
+  padding: 95px 215px 94px 215px;
+}
+
+.box__metodo {
+  width: 270px;
+  height: 101px;
+  margin: 0;
+}
+
+/* sección de cajas dedicación*/
+
+.dedicación {
+  width: 371px;
+  height: 46px;
+  padding: 0 609px 55px 619px;
+  margin: 0;
+}
+.images__dedicación {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  padding: 0 211px 188px 215px;
+  margin: 0;
+  width: 1179px;
+}
+
+/* sección de cajas para equipo  */
+
+.container__equipo {
+  background-color: rgb(245, 244, 250);
+  padding: 0;
+  width: 1600px;
+  height: 648px;
+  margin: auto;
+}
+.nuestro__equipo {
+  padding: 0 668px 50px 669px;
+  width: 264px;
+  height: 42px;
+}
+.img__equipo {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: 1177px;
+  height: 368px;
+  margin: auto;
+}
+.box__integrante {
+  background-color: var(--detail2-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* sección de cajas para footer */
+.boxicon__footer {
+  width: 145px;
+  height: 31px;
+  padding: 60px 1240px 0 215px;
+}
+
+.boxcontac__footer {
+  width: 231px;
+  height: 92px;
+  margin: 0;
+  padding: 9px 1154px 60px 215px;
+}
+
+.box__dirección {
+  padding: 0;
+}
+
+/* De aqui en adelante empiezan las cajas para "portafolio" */
+
+/* sección para cajas de filtros ---------------------------------------------------------------------------------- */
+
+.container__filtros {
+  width: 1180px;
+  height: 1360px;
+  margin: 0;
+  padding: 108px 215px 82px 215px;
+}
+.button__item {
+}
+.button__filtros {
+  display: flex;
+  column-gap: 8;
+  padding: 0;
+  width: 620px;
+}
+.button__category {
+  color: var(--font-color);
+  width: 38px;
+  height: 26px;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  background: var(--button-color);
+}
+.button__category:hover {
+  background-color: var(--primary-color);
+  color: var(--detail2-color);
+}
+.button__category:focus {
+  background-color: var(--primary-color);
+  color: var(--detail2-color);
+}
+.filtros__hero {
+  width: 611px;
+  height: 54px;
+  padding-left: 290px;
+  margin: 0;
+}
+.filtro__todo {
+  width: 73px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--button-color);
+  text-align: center;
+}
+.button__category {
+  padding: 10px 18px 10px 17px;
+  width: 38px;
+  height: 26px;
+}
+.filtro__sw {
+  width: 128px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--button-color);
+  text-align: center;
+}
+.filtro__aplicaciones {
+  width: 145px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--button-color);
+  text-align: center;
+}
+.filtro__diseño {
+  width: 103px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--button-color);
+  text-align: center;
+}
+.filtro__marketing {
+  width: 130px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--button-color);
+  text-align: center;
+}
+
+/* sección de cajas para categorias */
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+
+/* esta seccion organiza los estilos de las categorias------------------------------------------------- */
+
+.box-categoria__tecnoduck {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__tecnoduck:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__tecnoduck:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.box-categoria__poster {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__poster:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__poster:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box-categoria__restaurante {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__restaurante:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__restaurante:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.box-categoria__prime {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__prime:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__prime:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.box-categoria__cajas {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__cajas:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__cajas:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.box-categoria__inspiración {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__inspiración:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__inspiración:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.box-categoria__edición {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__edición:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__edición:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.box-categoria__lab {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__lab:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__lab:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.box-categoria__negocio {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.box-categoria__negocio:hover {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.categorias .box-categoria__negocio:focus {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
