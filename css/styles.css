@@ -12,15 +12,11 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--font-color);
+  box-sizing: border-box;
 }
 .container {
-  width: 1600px;
-  margin: auto;
-}
-.container__portafolio {
-  width: 1600px;
-  height: 1880px;
-  margin: auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .list {
@@ -46,6 +42,12 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 .header__navegation .header__link:hover {
   color: var(--primary-color);
@@ -84,14 +86,13 @@ body {
 .button__solicite {
   color: var(--detail2-color);
   background-color: var(--primary-color);
-  width: 197px;
-  height: 30px;
+  width: 261px;
+  height: 50px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  padding: 10px 32px;
   align-items: center;
   justify-items: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -124,21 +125,21 @@ body {
   text-transform: uppercase;
 }
 .dedicación {
-  text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 55px;
 }
 .nuestro__equipo {
-  width: 263px;
-  height: 42px;
-  margin: auto 0;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-top: 188px;
+  margin-bottom: 50px;
 }
 .integrantes {
   color: var(--font-color);
@@ -203,8 +204,8 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 1600px;
   height: 252px;
+  padding-top: 60px;
 }
 .footer__contac {
   color: var(--detail-color);
@@ -225,10 +226,8 @@ body {
 
 .nav {
   display: flex;
+  gap: 90px;
   align-items: center;
-  padding: 32px 0;
-  width: 1600px;
-  margin: 0;
 }
 .box__icono {
   margin-right: 93px;
@@ -236,14 +235,13 @@ body {
 }
 .header__navegation {
   display: flex;
-  margin-right: 344px;
-  column-gap: 50px;
   align-items: center;
+  gap: 50px;
+  padding: 0;
 }
 .contac__list {
   display: flex;
   column-gap: 50px;
-  padding: 0;
   align-items: center;
 }
 
@@ -251,7 +249,6 @@ body {
 
 .container__apertura {
   background-color: var(--background-color);
-  width: 1600px;
   height: 600px;
 }
 
@@ -270,11 +267,11 @@ body {
 
 .container__metodología {
   display: flex;
+  justify-content: space-between;
   column-gap: 30px;
-  width: 1170px;
-  height: 122px;
-  margin: auto;
-  padding: 95px 215px 94px 215px;
+  padding: 0;
+  margin-top: 95px;
+  margin-bottom: 94px;
 }
 
 .box__metodo {
@@ -285,42 +282,22 @@ body {
 
 /* sección de cajas dedicación*/
 
-.dedicación {
-  width: 371px;
-  height: 46px;
-  padding: 0 609px 55px 619px;
-  margin: 0;
-}
 .images__dedicación {
   display: flex;
   column-gap: 30px;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 211px 188px 215px;
-  margin: 0;
-  width: 1179px;
+  padding: 0;
 }
 
 /* sección de cajas para equipo  */
 
-.container__equipo {
-  background-color: rgb(245, 244, 250);
-  padding: 0;
-  width: 1600px;
-  height: 648px;
-  margin: auto;
-}
-.nuestro__equipo {
-  padding: 0 668px 50px 669px;
-  width: 264px;
-  height: 42px;
-}
 .img__equipo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  column-gap: 37px;
   padding: 0;
-  width: 1177px;
-  height: 368px;
-  margin: auto;
+  margin: 0 0 94px 0;
 }
 .box__integrante {
   background-color: var(--detail2-color);
@@ -333,14 +310,11 @@ body {
 .boxicon__footer {
   width: 145px;
   height: 31px;
-  padding: 60px 1240px 0 215px;
 }
 
 .boxcontac__footer {
   width: 231px;
   height: 92px;
-  margin: 0;
-  padding: 9px 1154px 60px 215px;
 }
 
 .box__dirección {
@@ -351,32 +325,30 @@ body {
 
 /* sección para cajas de filtros ---------------------------------------------------------------------------------- */
 
-.container__filtros {
-  width: 1180px;
-  height: 1360px;
-  margin: 0;
-  padding: 108px 215px 82px 215px;
-}
 .button__item {
 }
 .button__filtros {
   display: flex;
-  column-gap: 8;
+  column-gap: 8px;
   padding: 0;
-  width: 620px;
+  justify-content: center;
 }
 .button__category {
   color: var(--font-color);
-  width: 38px;
-  height: 26px;
+  width: 73px;
+  height: 38px;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  background: var(--button-color);
+  background: var(--detail2-color);
+  border-bottom: none;
+  border: 0;
+  margin-bottom: 50px;
 }
 .button__category:hover {
   background-color: var(--primary-color);
@@ -386,60 +358,16 @@ body {
   background-color: var(--primary-color);
   color: var(--detail2-color);
 }
-.filtros__hero {
-  width: 611px;
-  height: 54px;
-  padding-left: 290px;
-  margin: 0;
-}
-.filtro__todo {
-  width: 73px;
-  height: 38px;
-  border-radius: 4px;
-  background: var(--button-color);
-  text-align: center;
-}
-.button__category {
-  padding: 10px 18px 10px 17px;
-  width: 38px;
-  height: 26px;
-}
-.filtro__sw {
-  width: 128px;
-  height: 38px;
-  border-radius: 4px;
-  background: var(--button-color);
-  text-align: center;
-}
-.filtro__aplicaciones {
-  width: 145px;
-  height: 38px;
-  border-radius: 4px;
-  background: var(--button-color);
-  text-align: center;
-}
-.filtro__diseño {
-  width: 103px;
-  height: 38px;
-  border-radius: 4px;
-  background: var(--button-color);
-  text-align: center;
-}
-.filtro__marketing {
-  width: 130px;
-  height: 38px;
-  border-radius: 4px;
-  background: var(--button-color);
-  text-align: center;
-}
 
 /* sección de cajas para categorias */
 
 .categorias {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+  margin-bottom: 82px;
 }
 
 /* esta seccion organiza los estilos de las categorias------------------------------------------------- */
@@ -642,4 +570,25 @@ body {
   background: #fff;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.filtro__todo {
+  width: 73px;
+  height: 38px;
+}
+.filtro__sw {
+  width: 128px;
+  height: 38px;
+}
+.filtro__aplicaciones {
+  width: 145px;
+  height: 38px;
+}
+.filtro__diseño {
+  width: 103px;
+  height: 38px;
+}
+.filtro__marketing {
+  width: 130px;
+  height: 38px;
 }
