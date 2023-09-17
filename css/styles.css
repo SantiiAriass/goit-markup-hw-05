@@ -8,6 +8,7 @@
   --detail2-color: rgb(255, 255, 255);
   --button-color: rgb(245, 244, 250);
   --background-color: rgb(47, 48, 58);
+  --icon-color: rgb(175, 177, 184);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -132,7 +133,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 55px;
-  margin-top: 99px;
+  margin-top: 230px;
 }
 .nuestro__equipo {
   text-align: center;
@@ -253,7 +254,8 @@ body {
 .container__apertura {
   background-color: var(--background-color);
   height: 600px;
-  background-image: url(/images/imagen-fondo/Imagen.png);
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+    url(/images/imagen-fondo/Imagen.png);
 }
 
 .box__apertura {
@@ -603,8 +605,7 @@ body {
   column-gap: 230px;
   justify-content: center;
   padding: 0;
-  margin-top: 114px;
-  margin-bottom: 0;
+  margin-bottom: 55px;
 }
 .metodología__iconitems {
   width: 70px;
@@ -613,18 +614,14 @@ body {
 
 .iconos__equipo {
   display: flex;
-  column-gap: 34px;
+  gap: 10px;
   justify-content: center;
   padding: 0;
   margin-top: 28px;
   margin-bottom: 42px;
 }
-.equipo__hover:hover {
-  fill: var(--primary-color);
-}
-.equipo__iconitems {
-  width: 20px;
-  height: 20px;
+.equipo__iconitem {
+  color: var(--icon-color);
 }
 .clientest {
   margin-top: 153px;
@@ -659,20 +656,68 @@ body {
   margin-bottom: 0;
 }
 
-.iconos__encuentrenos {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 82px;
-  margin-top: 32px;
-  padding: 0;
-}
-.encuentrenos__iconitems {
-  width: 20px;
-  height: 20px;
-  align-items: center;
-}
 .footer__section {
   display: flex;
+}
+
+svg {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+.icon-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  background-color: var(--detail2-color);
+  border-radius: 50%;
+}
+.icon-item:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.icon-item2 {
+  width: 106px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+}
+.icon-item2:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  cursor: pointer;
+}
+.boxicon__clientes:hover {
+  border-color: var(--primary-color);
+}
+.iconos__encuentrenos {
+  display: flex;
+  gap: 10px;
+  margin-left: 40px;
+}
+.icon-item3 {
+  display: flex;
+  gap: 10px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--detail2-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.icon-item3:hover {
+  color: var(--detail2-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
